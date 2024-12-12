@@ -1,0 +1,34 @@
+.div-middle {
+    width: 100vw;
+    height: 25vh;
+    /* background-color: #002b4d; Deep futuristic blue */
+    display: flex;
+    flex-direction: column;
+    border: 4px solid white; 
+    border-radius: 15px; /* Subtle rounding */
+    box-shadow: 2px 2px 2px 3px black;
+    
+}
+
+.div-track-top {
+    width: 100vw;
+    height: 25vh;
+    border: 4px solid white; 
+    box-shadow: 2px 2px 2px 3px black;
+    /* background-image: url('/images/tracks.jpg'); */
+    display: flex;
+    /* border: 2px solid #ffcc00; Futuristic yellow border */
+    border-radius: 10px; /* Softer corners */
+}
+
+.div-track-bottom {
+    width: 100vw;
+    height: 25vh;
+    /* background-color: #002b4d; Deep futuristic blue */
+    display: flex;
+    border-radius: 10px; /* Softer corners */
+    /* background-image: url('/images/tracks.jpg'); */
+}
+p{
+    color:black;
+}

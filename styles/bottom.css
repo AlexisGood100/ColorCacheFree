@@ -1,0 +1,16 @@
+.div-bottom {
+    width: 100vw;
+    margin:1rem;
+    /* background-color: #005f99; Electric Cyan */
+    display: flex;
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+}
+
+
+.div-bottom-2nd{
+    width: 100vw;
+    /* background-color: #005f99; Electric Cyan */
+    display: flex;
+    border-radius: 20px 20px 0 0; /* Rounded top corners */
+    margin:1rem;
+}

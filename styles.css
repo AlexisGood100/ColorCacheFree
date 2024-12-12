@@ -1,0 +1,927 @@
+body {
+    box-shadow: 0 0 15px 5px #00f0ff; /* Intense neon glow */
+}
+
+
+.hide {
+    display: none;
+}
+
+
+
+/* Upgrade Page */
+/* Container Styling */
+.div-container-upgrade-store {
+    background-color: #1a1a2e; /* Dark background for futuristic feel */
+    color: #ffffff; /* White text for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Soft shadow for depth */
+    /* max-width: 800px; */
+    margin: auto;
+   
+}
+p {
+    text-align: center;
+}
+/* Headings */
+h3, h4 {
+    color: #f39c12; /* Bright orange for headings */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    text-align: center;
+}
+
+/* Credit Display */
+.span-current-credits {
+    font-weight: bold;
+    color: #9b59b6; /* Purple to contrast orange */
+}
+
+
+
+.btn-unpause:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* Upgrade Sections */
+.div-upgrades {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.test-div{
+    width:100vw;
+    height:100vh;
+}
+
+
+
+.div-upgrade {
+    background-color: #9b59b6; /* Purple for upgrade containers */
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* height:10vh; */
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* Upgrade Prices */
+p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #f39c12; /* Orange for prices */
+}
+
+
+/* End of Upgrade Page */
+
+
+/* Intro Scene */
+
+.div-container-intro-scene{
+    width:100vh;
+    height:100vh;
+    margin:0 auto;
+    text-align: center;
+    /* margin-top:5%; */
+}
+
+.img-intro-scene{
+    width:50vw;
+    height:50vh;
+}
+
+
+
+/* Character Selection */
+.div-character-selection-container{
+    margin:0 auto;
+    text-align:center;
+    width:100vw;
+    height:100vh;
+}
+
+.h3-character-name-selection{
+    color:white;
+   padding:1rem;
+   font-size: 24px;
+   color:orangered;
+}
+
+
+.img-character-selection{
+    width:50vw;
+    height:50vh;
+    margin-top:3%;
+    border:1px solid white;
+    box-shadow: 2px 2px 3px 3px white;
+    
+}
+
+/* End of character Selection */
+
+
+/* Testing  */
+
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Press Start 2P', cursive; /* Ensure you include a retro font */
+}
+
+.div-container-pause-menu {
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    
+    margin: 0 auto;
+    width:100%;
+    justify-content: center;
+    display: flex;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    /* height:100vh; */
+    
+}
+
+.div-menu-container{
+    margin:0 auto;
+    justify-content: center;
+    
+}
+
+.menu-title, .h2-upgrade-store, .h2-misload-log, .h2-game-statistics, .h2-color-matches {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    margin:6rem;
+}
+
+ .btn-upgrade-stamina, .btn-upgrade-fatigue,
+.btn-upgrade-stamina-recovery, .btn-upgrade-number-of-boxes-on-track, 
+.btn-upgrade-random-color-change {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-unpause:hover, .btn-upgrade-stamina:hover, .btn-upgrade-fatigue:hover,
+.btn-upgrade-stamina-recovery:hover, .btn-upgrade-number-of-boxes-on-track:hover,
+.btn-upgrade-random-color-change:hover {
+    background-color: #005f00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+.btn-unpause{
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #073007;
+    color:rgb(130, 11, 11);
+    background-color: #00ff00;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.div-upgrades {
+    display: flex;
+    flex-direction: flex;
+}
+
+.div-upgrade {
+    border: 1px dashed #00ff00;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    margin:0 auto;
+}
+
+.ul-game-statistics {
+    list-style-type: none;
+    padding: 0;
+   
+}
+.ul-game-statistics li{
+    margin:0 auto;
+    text-align:center;
+}
+
+.menu-title{
+    text-align: center;
+}
+
+.span-current-credits,
+.span-max-stamina,
+.span-fatigue-recovery-rate,
+.span-character-strength,
+.span-total-score,
+.span-packages-scanned,
+.span-misloads,
+.span-upgrades,
+.span-time-played {
+    color: #ff0;
+}
+
+
+/* Sample */
+
+.div-sample{
+    width:100px;
+    height:100px;
+    border:2px solid black; 
+     margin:.3rem;
+     box-shadow: 2px 2px 4px 3px black;
+     margin:0 auto;
+}
+
+.div-sample-pallet-container{
+    display:flex;
+    width:50vw;
+    height:13vh;
+    margin:2rem;
+    margin-left:23%;
+    /* border:2px solid white; 
+    box-shadow: 2px 2px 4px 3px black; */
+}
+
+.img-character-portait{
+    margin-left:40%;
+}
+
+.div-matches{
+    display:flex;
+    /* flex-direction: column; */
+}
+
+.div-pallet-colors span{
+    margin:2rem;
+}
+
+.div-custom-colors-selection{
+    display: flex;
+    flex-direction: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width:90vw;
+}
+.div-custom-color{
+    width:100px;
+    height:100px;
+    margin:.5rem;
+color:white;
+
+}
+
+.div-selection-custom-colors{
+    display: flex;
+    flex-direction: flex;
+    flex-wrap: wrap;
+    margin:0 auto;
+    /* width:80vw;
+    height:20vh; */
+    
+}
+
+.div-custom-colors-selection{
+    box-shadow: 2px 2px 2px 2px blue;
+}
+
+.div-player-selected-custom-colors{
+    width:80vw;
+    height:25vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 auto;
+    border:1px solid white;
+}
+
+
+
+.div-selection-color{
+    width:100px;
+    height:50px;
+    border:1px solid white;
+    margin:.5rem;
+}
+
+.divColor{
+    border:1px solid white;
+    box-shadow: 2px 2px 2px 2px white;
+    margin:0 auto;
+}
+
+.div-top-2nd-position{
+    display:flex;
+    flex-direction: column;
+}
+
+/* 2nd level styles */
+
+.div-container-all-l2{
+    width:100vw;
+    height:100vh;
+    border:2px solid black;
+}
+
+.div-track-top-l2{
+    width:100vw;
+    height:10vh;
+    /* background-color: blue; */
+    border:1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: flex;
+    display: flex;
+    justify-content: center;
+}
+
+.div-track-top-l2 div{
+margin-top:1.5%;
+margin:0 auto;
+}
+.div-track-top-2nd-l2 div{
+margin-top:1.5%;
+margin:0 auto;
+
+}
+.div-track-top-2nd-l2{
+    width:100vw;
+    height:10vh;
+  
+    border:1px solid black;
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+
+.div-middle-container-l2{
+    width:100vw;
+    height:60vh;
+  
+    display:flex;
+}
+.div-track-left-side-l2{
+    width:15vw;
+    height:60vh;
+   
+   border:1px solid black;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.div-track-left-side-2nd-l2{
+    width:15vw;
+    height:60vh;
+  
+   border:1px solid black;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.div-track-left-side-2nd-l2 div{
+    margin-left:40%;
+    margin:0 auto;
+}
+.div-track-left-side-l2 div{
+    margin-left:40%;
+    margin:0 auto;
+}
+
+
+.div-middle-l2{
+    width:100vw;
+    height:50vh;
+
+      border:1px solid black;
+}
+
+.div-track-right-side-l2{
+    width:15vw;
+    height:60vh;
+ 
+   display:flex;
+      border:1px solid black;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.div-track-right-side-l2 div{
+margin-left:40%;
+margin:0 auto;
+}
+
+.div-track-right-side-2nd-l2 div{
+margin-left:40%;
+margin:0 auto;
+}
+
+.div-track-right-side-2nd-l2{
+    width:15vw;
+    height:60vh;
+ 
+   display:flex;
+      border:1px solid black;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+}
+.div-track-bottom-l2{
+    width:100vw;
+    height:10vh;
+
+      border:1px solid black;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+}
+
+.div-track-bottom-l2 div{
+margin-top:1%;
+margin:0 auto;
+}
+
+.div-track-bottom-2nd-l2 div{
+margin-top:1%;
+margin:0 auto;
+}
+
+.div-track-bottom-2nd-l2{
+    width:100vw;
+    height:10vh;
+    
+      border:1px solid black;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+}
+
+
+/* <div class="div-container-all-l2">
+        <div class="div-track-top-l2">
+
+        </div>
+        <div class="div-middle-container-l2">
+            <div class="div-track-left-side-l2">
+    
+            </div>
+
+        <div class="div-middle-l2">
+
+        </div>    
+        <div class="div-track-right-side-l2">
+
+        </div>
+        <div class="div-track-bottom-l2">
+            
+        </div>
+        </div>
+
+          
+    </div> */
+
+    /* 2nd */
+
+    .div-pallet-mid-1-l2{
+        display:flex;
+        margin:1rem;
+        height:13vh;
+  
+    }
+    .div-pallet-mid-2-l2{
+        display:flex;
+        margin:1rem;
+        height:13vh;
+    }
+    .div-pallet-mid-3-l2{
+        display:flex;
+        margin:1rem;
+        height:13vh;
+    }
+    .div-pallet-mid-4-l2{
+        display:flex;
+        margin:1rem;
+        height:13vh;
+    }
+
+    /* End of second stage */
+
+
+    /* Boss Level */
+
+    .div-level-boss-fight-container{
+        width:90vw;
+        height:100vh;
+        background-color: purple;
+        padding:1rem;
+        margin: 0 auto;
+        border:1px solid white;
+        
+    }
+
+.container-for-all-boss-stage-inner-content{
+    display:flex;
+}
+
+    .div-level-boss-tracks{
+        border:4px solid black;
+        display:flex;
+        flex-direction: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .div-level-boss-track{
+        width:12vw;
+        background-color: green;
+        border:2px solid black;
+        height:82vh;
+      
+    }
+
+    .div-level-boss-track div{
+        margin: 0 auto;
+    }
+
+  .boss-level-element{
+   position:relative;
+   top:0px;
+   width:100px;
+   margin: 0 auto;
+   height:100px;
+   background-color: orange;
+  }
+
+  .boss-stage-fire-track{
+    background-position: center;
+    background-image: url('./images/bossStageFireTrack.jpg');
+
+  }
+
+  .boss-stage-random-color-track{
+    background-position: center;
+    background-image: url('./images/bossStageGreenTrack.jpg');
+
+  }
+
+  .boss-stage-green-color-track{
+    background-position: center;
+    background-image: url('./images/bossStageRandomColorTrack.jpg');
+
+  }
+  .boss-stage-ocean-color-track{
+    background-position: center;
+    background-image: url('./images/bossStageOceanTrack.jpg');
+
+  }
+
+  .boss-stage-earth-color-track{
+    background-position: center;
+    background-image: url('./images/bossStageEarthTrack.jpg');
+
+  }
+
+  .div-boss-stage-pallets-left{
+    width: 7vw;
+    background-image: url('./images/bossLeveLeftColorPalletes.jpg');
+    /* background-position: center; */
+    background-position: cover;
+  }
+
+  .div-boss-stage-pallets-right{
+    width:7vw;
+    background-color: red;
+    background-image: url('./images/bossLeveLeftColorPalletes.jpg');
+    background-position: cover;
+  }
+
+
+  .div-boss-stage-pallets-right-2{
+    width:7vw;
+    background-color: red;
+    background-image: url('./images/bossLeveLeftColorPalletes.jpg');
+    background-position: cover;
+  }
+  
+
+  .div-boss-stage-pallets-left-2{
+    width: 7vw;
+    background-image: url('./images/bossLeveLeftColorPalletes.jpg');
+    /* background-position: center; */
+    background-position: cover;
+  }
+
+  /* End of boss stage */
+
+
+
+
+
+  /* Trying out custom skins for the pallets */
+  .halloweenBackground{
+      background-position: center;
+      background-image: url('./images/backgroundsCustom/halloweenBackground.jpg');
+      background-repeat: no-repeat;
+      /* background-image: cover; */
+  }
+
+  .pinkBackground{
+    /* background-position: center; */
+    background-image: url('./images/backgroundsCustom/pinkBackground.jpg');
+    background-repeat: no-repeat;
+    background-image: center;
+}
+
+.uniqueBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/uniqueBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.purpleBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/purpleBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.redBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/redBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.goldBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/goldBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.christmasBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/christmasBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.undertheseaBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/undertheseaBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.thanksgivingBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/thanksgivingBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.alienInvasionBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/alienBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.cremeBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/cremeBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.blueBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/blueBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.medevilBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/medevilBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.cosmicBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/cosmicBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.gradientBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/gradientBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.cloudBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/cloudBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+.customBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/customBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+
+
+/* Testing individual styles for the packages for the specific theme that was choosen */
+
+/* Medieval level one package styles */
+.sword-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:5vw;
+    /* margin: 0 auto; */
+    margin:.5rem;
+}
+
+.blade {
+    width: 10px;
+    height: 30px;
+    background: silver;
+    border-radius: 0 0 5px 5px;
+}
+
+.guard {
+    width: 30px;
+    height: 10px;
+    background: gray;
+    /* margin-top: 5px; */
+}
+
+.handle {
+    width: 15px;
+    height: 50px;
+    background: brown;
+    /* /* border-radius: 0 0 5px 5px; */
+    /* margin-top: 5px;  */
+}
+
+/* Fish outlay for level 1 and 2 */
+
+.fish {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+}
+
+.fish::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.tail {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(-45deg);
+}
+
+.fin {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    background-color: #2980b9;
+    border-radius: 0 50% 50% 0;
+    transform: rotate(-30deg);
+}
+
+.eye {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+  /* Styles of turkey theme level 1 and 2 */
+
+  .turkey {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 50% 50% 45% 45%;
+    margin: 50px auto;
+  }
+
+  
+
+  .turkey::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 50%;
+  }
+
+  .wing {
+    position: absolute;
+    top: 60px;
+    left: -40px;
+    width: 70px;
+    height: 10px;
+    background-color: brown;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+  }
+
+  .wing-right {
+    position: absolute;
+    top: 40px;
+    right: -40px;
+    width: 70px;
+    height: 10px;
+    background-color: brown;
+    border-radius: 50%;
+    transform: rotate(30deg);
+  }
+
+
+
+  
+
+  /* Intro scene */
+  #div-container-intro-scene{
+    color:white;
+  }
+  .img-intro-scene{
+    border:1px solid white;
+    box-shadow: 2px 2px 2px 5px white;
+  }
+
+  #div-container-intro-scene p{
+    color:white;
+  }
+
+  body p{
+    color:white;
+  }
+
+
+  /* Button Styling */
+.btn-unpause {
+    background-color: #f39c12; /* Orange button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: background-color 0.3s ease;
+    margin-left:47%;
+}

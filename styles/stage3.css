@@ -1,0 +1,299 @@
+
+    /* Start of the third stage */
+
+    .ring-circle-container{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        height: 90vh;
+        background-color: grey;
+        margin: 0;
+    }
+   
+    
+    .ring {
+        /* position: absolute; */
+        border-radius: 50%;
+        /* border: 5px solid #333; Ring color */
+      
+    }
+    
+  
+    .ring-1 {
+        /* position: relative; */
+ 
+    border-radius: 50%; /* Makes the div circular */
+    /* background-color: lightblue; Circle color */
+    }
+
+    .ring-1-element{
+ 
+            position: absolute;
+            width: 100px;  /* Width of each element */
+            height: 100px; /* Height of each element */
+            border-radius: 50%; /* Circular elements */
+            background-color: #333; /* Element color */
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            
+            /* Position each element based on its index */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%) rotate(calc(var(--i) * 120deg)) translate(0px);
+        
+    
+    }
+    
+    .ring-2 {
+ 
+    }
+
+    .ring-2-element{
+ 
+        position: absolute;
+        width: 150px;  /* Width of each element */
+        height: 75px; /* Height of each element */
+        border-radius: 50%; /* Circular elements */
+        background-color: #333; /* Element color */
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        
+        /* Position each element based on its index */
+        top: 50%;
+        left: 50%;
+        transform: translate(70%, 50%) rotate(calc(var(--i) * 30deg)) translate(175px);
+    
+
+}
+    
+    .ring-3 {
+     
+    }
+
+    .ring-3-element{
+ 
+        position: absolute;
+        width: 150px;  /* Width of each element */
+        height: 75px; /* Height of each element */
+        border-radius: 50%; /* Circular elements */
+        background-color: #333; /* Element color */
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        
+        /* Position each element based on its index */
+        top: 50%;
+        left: 50%;
+        transform: translate(70%, 60%) rotate(calc(var(--i) * 30deg)) translate(328px);
+    
+
+}
+    
+    /* .ring-4 {
+     
+    } */
+    .ring-4-element{
+ 
+        position: absolute;
+        width: 100px;  /* Width of each element */
+        height: 100px; /* Height of each element */
+        border-radius: 50%; /* Circular elements */
+        background-color: red; /* Element color */
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        
+        /* Position each element based on its index */
+        top: 50%;
+        left: 50%;
+        transform: translate(125%, 50%) rotate(calc(var(--i) * 100deg)) translate(375px);
+    
+
+}
+    
+    .ring-5 {
+    
+    }
+    .ring-5-element{
+ 
+        position: absolute;
+        width: 150px;  /* Width of each element */
+        height: 75px; /* Height of each element */
+        border-radius: 50%; /* Circular elements */
+        background-color: #333; /* Element color */
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        
+        /* Position each element based on its index */
+        top: 50%;
+        left: 50%;
+        transform: translate(85%, 100%) rotate(calc(var(--i) * 30deg)) translate(300px);
+}
+
+
+     
+    /* .ring-6 {
+        width: 1050px;
+        height: 1050px;
+    } */
+    
+    .div-color-palette-container{
+        width:30vw;
+        height:70vh;
+        /* background-color: blue; */
+        margin-right:9%;
+        display:flex;
+        flex-wrap: wrap;
+        /* border:1px solid black; */
+        /* background-color: black; */
+      
+    }
+    .div-color-palette-container div{
+      
+        /* border:1px solid black; */
+        /* background-color: black; */
+        box-shadow: 2px 2px 2px 2px greenyellow;
+    }
+    
+    
+  .level-three-background{
+    background-image: url('./images/stage3Background.jpg');
+    background-repeat: none;
+    background-position: center;
+  }
+
+  
+.div-animation-introduction{
+    background-color: white;
+    width:100vw;
+    height:100vh;
+}
+    .element-1 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(calc(var(--i) * (360deg / 3))) translate(250px); /* Adjust translate value for distance */
+    }
+    .element-2 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(calc(var(--i) * (360deg / 3))) translate(255px); /* Adjust translate value for distance */
+    }
+    .element-3 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(calc(var(--i) * (360deg / 3))) translate(245px); /* Adjust translate value for distance */
+    }
+    .element-4 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-0%,100%) rotate(calc(var(--i) * (360deg / 3))) translate(-395px); /* Adjust translate value for distance */
+    }
+    .element-5 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-450%, -50%) rotate(calc(var(--i) * (360deg / 3))) translate(-395px); /* Adjust translate value for distance */
+    }
+    .element-6 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(calc(var(--i) * (360deg / 3))) translate(-245px); /* Adjust translate value for distance */
+    }
+
+    .element-7 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(calc(var(--i) * (360deg / 3))) translate(245px); /* Adjust translate value for distance */
+    }
+
+    .div-circle{
+        border-radius: 100%;
+        border:1px solid black;
+    }
+
+    .div-circle-1{
+        width:500px;
+        height:500px;
+        margin: 0 auto;
+        position: absolute;
+        top:30%;
+        left:40%;
+    }
+    .div-circle-2{
+        width:500px;
+        height:500px;
+        margin: 0 auto;
+        position: absolute;
+        top:30%;
+        left:40%;
+    }

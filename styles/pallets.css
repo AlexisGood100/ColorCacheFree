@@ -1,0 +1,38 @@
+.div-pallet {
+    width: 5vw;
+    height: 10vh;
+    /* background-color: #004d4d; Dark futuristic teal */
+    margin: 1rem;
+    border-radius: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.div-pallet-top {
+    /* box-shadow: 0 0 15px 5px #00f0ff; Neon glow */
+    box-shadow: 2px 2px 2px 2px black;
+    /* border: 2px solid #ff3300; Bright futuristic red */
+    /* border-radius: 10px; */
+    color:white;
+    
+    
+    
+}
+
+.div-pallet-bot {
+    /* box-shadow: 0 0 15px 5px #FFD700; Neon golden glow */
+    box-shadow: 2px 2px 2px 2px black;
+    color: white;
+    margin: 0 auto;
+}
+
+
+
+.div-pallet-bot:hover, .div-pallet-top:hover {
+    transition: 2s;
+    /* background-color: #007acc; Futuristic blue */
+}
+
+.p-pallet-number {
+    color: #ffcc00; /* Futuristic yellow */
+}

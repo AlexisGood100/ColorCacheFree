@@ -1,0 +1,19 @@
+function removeAllBackgroundFromLevelThree(){
+    document.querySelector('.ring-circle-container').classList.remove('pinkBackground');
+    document.querySelector('.ring-circle-container').classList.remove('blueBackground');
+    document.querySelector('.ring-circle-container').classList.remove('purpleBackground');
+    document.querySelector('.ring-circle-container').classList.remove('goldBackground');
+    document.querySelector('.ring-circle-container').classList.remove('redBackground');
+    document.querySelector('.ring-circle-container').classList.remove('cremeBackground');
+    document.querySelector('.ring-circle-container').classList.remove('halloweenBackground');
+    document.querySelector('.ring-circle-container').classList.remove('christmasBackground');
+    document.querySelector('.ring-circle-container').classList.remove('thanksgivingBackground');
+    document.querySelector('.ring-circle-container').classList.remove('medevilBackground');
+    document.querySelector('.ring-circle-container').classList.remove('undertheseaBackground');
+    document.querySelector('.ring-circle-container').classList.remove('cosmicBackground');
+    document.querySelector('.ring-circle-container').classList.remove('alienInvasionBackground');
+    document.querySelector('.ring-circle-container').classList.remove('uniqueBackground');
+    document.querySelector('.ring-circle-container').classList.remove('gradientBackground');
+    document.querySelector('.ring-circle-container').classList.remove('cloudBackground');
+    document.querySelector('.ring-circle-container').classList.remove('customBackground');
+}

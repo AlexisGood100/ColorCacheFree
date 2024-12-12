@@ -1,0 +1,87 @@
+.div-score-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh; /* Increased height for better readability */
+    /* background-color: #007acc; Electric Cyan */
+    border: 2px solid #333333; /* Dark futuristic grey */
+    margin: 5px; /* Added more space between containers */
+    border-radius: 15px; /* Smoother corner rounding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add hover interaction */
+    background-color: blue;
+}
+
+
+  
+  @keyframes pulseAndFade {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  .clicked {
+      background-color:lightgoldenrodyellow;
+    animation: pulseAndFade 2s forwards;
+  }
+
+
+  @keyframes pulseAndFadeMisload {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  .clicked-misload {
+      background-color:red;
+    animation: pulseAndFadeMisload 2s forwards;
+  }
+
+.div-score-container p {
+    margin: 0.5rem; /* Reduced margin for a more compact look */
+    width: 100%;
+    font-size: 1.2em; /* Slightly larger font for better visibility */
+    color: #ffffff; /* White text for better contrast */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    transition: transform 2s, opacity 2s;
+}
+
+
+.div-score-container span {
+    font-weight: bold;
+    color: yellow; /* Golden highlights for spans */
+}
+
+.btn-drink-water:hover, .btn-pause:hover {
+    background-color: #DAA520; /* GoldenRod */
+}
+
+.btn-drink-water, .btn-pause {
+    background-color: #FF4500; /* Orange Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: background-color 0.3s ease;
+}

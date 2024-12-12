@@ -1,0 +1,7 @@
+.div-container-all {
+    /* background-color: #FF7F50; Coral retro */
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px #FFD700; /* Golden glow */
+    height: 80vh;
+}

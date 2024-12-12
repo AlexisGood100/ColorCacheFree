@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/pallets.css">
+    <link rel="stylesheet" href="styles/bottom.css">
+    <link rel="stylesheet" href="styles/top.css">
+    <link rel="stylesheet" href="styles/containerAll.css">
+    <link rel="stylesheet" href="styles/score.css">
+    <link rel="stylesheet" href="styles/packages.css">
+    <link rel="stylesheet" href="styles/instructions.css">
+    <link rel="stylesheet" href="styles/track.css">
+    <link rel="stylesheet" href="styles/stage3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomColor/0.6.1/randomColor.min.js" defer></script>
+
+    <title>Color Cache Game</title>
+</head>
+<body>
+ 
+    
+
+    <!-- <div class="div-animation-introduction hide">
+        <div class="div-circle div-circle-1">
+            <div class="div-circle div-circle-2">
+        </div>
+    <div class="element-1" id="circle"  style = '--i: 0'></div>
+    <div class="element-2" id="circle"  style = '--i: 1'></div>
+    <div class="element-3" id="circle"  style = '--i: 2'></div>
+    <div class="element-4" id="circle"  style = '--i: 2'></div>
+    <div class="element-5" id="circle"  style = '--i: 2'></div>
+    <div class="element-6" id="circle"  style = '--i: 2'></div>
+    <div class="element-7" id="circle"  style = '--i: 2'></div> -->
+    <!-- <div class="element-" id="circle"></div>
+    <div class="element-" id="circle"></div> -->
+<!-- </div> -->
+
+
+
+    <div class="div-character-selection-container hide">
+
+        <div class="div-character-container">
+
+            <h3 class="h3-character-name-selection">Name</h3>
+
+            <image class="img-character-selection"></image>
+
+            <p class="p-desc-character-selection">Description of character</p>
+            <p>Benefits: <span class="span-character-benefits-selection">Null</span></p>
+            <p>Cons:<span class="span-character-cons-selection">Null</span></p>
+            
+            <button class="btn-next-select-character">Next</button>
+            <button class="btn-select-character">Select</button>
+          
+
+        </div>
+        
+    </div>
+
+    
+
+
+
+    <div id="div-container-intro-scene" class="div-container-intro-scene">
+        <div class="div-intro-scene">
+            <h1 class="h1-intro-title">
+                Intro Title
+            </h1>
+            <img class="img-intro-scene">
+<p class="p-intro-description">Description</p>
+        </div>
+        <button class="btn-next-scene">Next</button>
+    </div>
+
+   
+
+<!-- Start of intro -->
+<div class="div-instructions hide">
+<h1>Welcome to the Color Cache Game.</h1>
+
+    <p>Today you will be sorting colors to the corresponding color cache.</p>
+    <p>Click a color and then click the pallet that has the same color (use number if unsure) to score points.</p>
+    <p>If the color is placed in the wrong color cahce, the result will be a misload which will lead to a reduction in points.</p>
+    <p>You can stack up to three colors but this will cause fatigue to increase quicker.</p>
+    <p>To increase stamina you must drink water.</p>
+    <p>To decrease fatigue you must not select any colors for two seconds.</p>
+    <p>You can stack colors but if the weight exceeds 150 then the color will not be able to join the stack.</p>
+    <p>The weight of the colors will increase fatigue while the actual handling of the color will decrease stamina.</p>
+    <div class="btn-start-game-container">
+        <p>Please choose Stage</p>
+        <div class="div-button-start-container">
+
+            <button class="btn-stage-1 mode">Stage 1</button>
+            <button class="btn-stage-2 mode">Stage 2</button>
+            <button class="btn-stage-3 mode">Stage 3</button>
+            <button class="btn-stage-boss-level mode">Boss</button>
+        </div>
+        
+        <p>Please choose starting color scheme.</p>
+        <div class="div-color-difficulty-tiers-container hide">
+            <p class="p-stage-start hide">Stage: <span class="span-stage-start">0</span></p>
+            <p>Easy</p>
+            <div class="div-easy-color-modes">
+                <button class="btn-show-difficulty-selection btn-red-scheme mode">Red</button>
+                <button class="btn-show-difficulty-selection btn-blue-scheme mode">Blue</button>
+                <button class="btn-show-difficulty-selection btn-purple-scheme mode">Purple</button>
+                <button class="btn-show-difficulty-selection btn-cosmic-scheme mode">Cosmic</button>
+                <button class="btn-show-difficulty-selection btn-alien-invasion-scheme mode">Alien Invasion</button>
+                <button class="btn-show-difficulty-selection btn-thanksgiving-scheme mode">Thanksgiving</button>
+                <button class="btn-show-difficulty-selection btn-medieval-scheme mode">Medieval</button>
+                <button class="btn-show-difficulty-selection btn-halloween-scheme mode">Halloween</button>
+                <button class="btn-show-difficulty-selection btn-christmas-scheme mode">Christmas</button>
+                <button class="btn-show-difficulty-selection btn-fullrandom-scheme mode">Full Random</button>
+            </div>
+           
+            <p>Medium</p>
+            <div class="div-medium-color-modes">
+                <button class="btn-show-difficulty-selection btn-pink-scheme mode">Pink</button>
+                <button class="btn-show-difficulty-selection btn-underwater-scheme mode">Underwater Sea</button>
+                <button class="btn-show-difficulty-selection btn-unique-color-scheme mode">Unique</button>
+                <button class="btn-show-difficulty-selection btn-random-gradients-theme mode">Random Gradients</button>
+            </div>
+
+            <p>Expert</p>
+            <div class="div-expert-color-modes">
+                <button class="btn-show-difficulty-selection btn-creme-scheme mode">Creme</button>
+                <button class="btn-show-difficulty-selection btn-silver-scheme mode">Silver</button>
+                <button class="btn-show-difficulty-selection btn-clouds-theme mode">Clouds</button>
+                <button class="btn-show-difficulty-selection btn-custom-theme mode">Custom</button>
+            </div>
+
+<!-- Add sample of pallete here -->
+<div class="div-sample-pallet-container hide">
+
+</div>
+
+<!-- End of sample of pallete here -->
+        </div>
+      <div class="div-difficulty-btn-container hide">
+
+          <p>Please choose difficulty.</p>
+          <button class="btn-easy-mode mode">Easy</button>
+          <button class="btn-medium-mode mode">Medium</button>
+          <button class="btn-hard-mode mode">Hard</button>
+        </div>
+    </div>
+</div>
+<!-- End of intro -->
+
+<!-- Custom Color Selection -->
+
+<div class="div-custom-color-selection-container hide">
+    <h2>Custom Colors</h2>
+    <p>Pick 24 colors to represent the Pallet and Package colors.</p>
+    <p><span class="span-number-of-selected-custom-colors"></span>/24</p>
+    <div class="div-player-selected-custom-colors">
+           
+    </div>
+    <div class="div-selection-custom-colors">
+
+        
+        <div class="div-custom-colors-selection">
+           
+        </div>
+    </div>
+</div>
+
+
+<!-- End of custom color selection -->
+
+<div class="div-game-body hide">
+
+    <div class="div-score-container">
+        <p>Level: <span class="span-level">0</span></p>
+        <p>Stamina: <span class="span-stamina">100</span></p>
+        <p>Fatigue: <span class="span-fatigue">0</span></p>
+        <p>Score: <span class="span-score">0</span></p>
+        <p>Boxes Sorted: <span class="span-boxes-sorted">0</span></p>
+        <p>Misloads: <span class="span-misloads">0</span></p>
+        <button class="btn-drink-water">Drink Water</button>
+    </div>
+
+    <div class="div-score-container">
+        <p>Current Color Number: <span class="span-current-package-route-number">N/A</span></p>
+        <p>Current Color Weight: <span class="span-current-package-weight">N/A</span></p>
+        <p>Current Theme: <span class="span-current-theme">Null</span></p>
+        <p>Timer: <span class="span-timer">0</span></p>
+        <p>Total colors on track: <span class="span-total-boxes-on-track">0</span></p>
+        <p>Stack Size: <span class="span-stack-size">0</span></p>
+        <p>Stack Weight: <span class="span-stack-weight">0</span></p>
+        <button class="btn-pause">Pause</button>
+    </div>
+
+<!-- Testing out creating another layout using existing code but changing some html and styles. -->
+<div class="div-level-boss-fight-container hide">
+    <div class="div-boss-container">
+        <p class="div-boss-health">Health: 0</p>
+    </div>
+    <div class="container-for-all-boss-stage-inner-content">
+        
+        
+        <div class="div-level-boss-tracks">
+        <div class="div-boss-stage-pallets-left"></div>
+        <div class="div-boss-stage-pallets-left-2"></div>
+            <div class="div-level-boss-track boss-stage-fire-track boss-track-1">
+                <!-- <div class="boss-level-element">
+                    
+                </div> -->
+            </div>
+        <div class="div-level-boss-track boss-stage-random-color-track boss-track-2"></div>
+        <div class="div-level-boss-track boss-stage-earth-color-track boss-track-3"></div>
+        <div class="div-level-boss-track boss-stage-green-color-track boss-track-4"></div>
+        <div class="div-level-boss-track boss-stage-ocean-color-track boss-track-5"></div>
+        <div class="div-boss-stage-pallets-right"></div>
+        <div class="div-boss-stage-pallets-right-2"></div>
+    </div>
+</div>
+   
+</div>
+
+<!-- Code do not touch under because it is for the first level original -->
+<div class="div-container-all level-one hide">
+    <div class="div-top">
+ 
+    </div>
+    <div class="div-top-2nd">
+ 
+    </div>
+
+    <div class="div-middle">
+
+<div class="div-track-top">
+    
+</div>
+
+
+<div class="div-track-bottom">
+
+</div>
+       
+    </div>
+    <div class="div-bottom">
+
+</div>
+<div class="div-bottom-2nd">
+
+</div>
+
+    
+</div>
+<div class="div-container-all-l2 hide">
+    <div class="div-track-top-l2">
+
+    </div>
+    <div class="div-track-top-2nd-l2">
+
+    </div>
+    <div class="div-middle-container-l2">
+        <div class="div-track-left-side-l2">
+
+        </div>
+        <div class="div-track-left-side-2nd-l2">
+
+        </div>
+
+    <div class="div-middle-l2">
+<div class="div-pallet-mid-1-l2 div-pallet-mid"></div>
+<div class="div-pallet-mid-2-l2 div-pallet-mid"></div>
+<div class="div-pallet-mid-3-l2 div-pallet-mid"></div>
+<div class="div-pallet-mid-4-l2 div-pallet-mid"></div>
+    </div>    
+    <div class="div-track-right-side-l2">
+
+    </div>
+    <div class="div-track-right-side-2nd-l2">
+
+    </div>
+</div>
+<div class="div-track-bottom-l2">
+    
+</div>
+<div class="div-track-bottom-2nd-l2">
+    
+</div>
+
+      
+</div>
+<div class="ring-circle-container hide">
+    <div class="div-color-palette-container">
+
+    </div>
+    
+
+
+ 
+<div class="ring ring-1">
+ 
+    
+</div>
+<div class="ring ring-2">
+
+      </div>
+<div class="ring ring-3">
+
+ 
+</div>
+
+<div class="ring ring-4">
+
+</div>
+<div class="ring ring-5">
+
+</div>
+</div>
+
+
+</div>
+<!-- End of game body -->
+
+<!-- When game is paused a menu will appear and you can go to multiple pages to see details of the current playthrough -->
+
+<div class="div-container-pause-menu hide">
+    <div class="div-menu-container hide">
+        <h1 class="menu-title">Menu</h1>
+
+
+    <h2 class="h2-upgrade-store">Upgrade Store</h2>
+    <div class="div-container-upgrade-store hide">
+        <h3>Credit Spending Store</h3>
+        <h3>Current Credits: <span class="span-current-credits">0</span></h3>
+        <p>The score that you earn is added to the player in the form of credits.</p>
+        <p>Credits can be spent to purchase upgrades that can make the game easier.</p>
+
+        <div class="div-upgrades">
+            <div class="div-upgrade stamina">
+                <h4>Max Stamina</h4>
+                <img src="/images/upgrades/stamina.jpg" alt="Max Stamina">
+                <p>Increases max stamina.</p>
+                <p>10</p>
+                <button class="btn-upgrade-stamina">Purchase</button>
+            </div>
+            <div class="div-upgrade fatigue">
+                <h4>Fatigue Decrease</h4>
+                <img src="/images/upgrades/fatigue.jpg" alt="Fatigue Decrease">
+                <p>Increases the rate at which fatigue decreases.</p>
+                <p>20</p>
+                <button class="btn-upgrade-fatigue">Purchase</button>
+            </div>
+            <div class="div-upgrade water-recovery">
+                <h4>Water Recovery</h4>
+                <img src="/images/upgrades/waterMan.jpg" alt="Water Recovery">
+                <p>Increases the amount of stamina recovered by drinking water.</p>
+                <p>30</p>
+                <button class="btn-upgrade-stamina-recovery">Purchase</button>
+            </div>
+         
+            
+        </div>
+    </div>
+    
+    
+    
+    <h2 class="h2-misload-log">Misload Log</h2>
+    <div class="div-container-misload-log hide">
+        <div class="div-misloads">
+            <ul class="ul-misload-container"></ul>
+        </div>
+    </div>
+
+    <h2 class="h2-color-matches">Color Matches</h2>
+        <div class="div-color-matches hide">
+            <div class="div-matches">
+                <div class="div-pallet-colors">
+                    
+                </div>
+                <div class="div-color-matches-container">
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    <div class="div-container-game-statistics">
+        <h2 class="h2-game-statistics">Game Statistics</h2>
+        <div class="div-game-statistics hide">
+            <ul class="ul-game-statistics">
+                <li><span class="span-character-name-statistics">0</span></li>
+                <img class="img-character-portait">
+                <li>Current Max Stamina: <span class="span-max-stamina">0</span></li>
+                <li>Fatigue Recovery Rate: <span class="span-fatigue-recovery-rate">0</span></li>
+                <li>Character Strength: <span class="span-character-strength">0</span></li>
+                <li>Total Score: <span class="span-total-score">0</span></li>
+                <li>Packages Scanned: <span class="span-packages-scanned">0</span></li>
+                <li>Misloads: <span class="span-misloads">0</span></li>
+                <li>Upgrades: <span class="span-upgrades">0</span></li>
+                <li>Time Played: <span class="span-time-played">0</span> Seconds</li>
+            </ul>
+        </div>
+  
+        <button class="btn-unpause hide">Unpause</button>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- Scripts -->
+ <!-- function scripts -->
+<script src="functions/createPackage.js"></script>
+<script src="functions/grabRandomNumberFromArray.js"></script>
+<script src="functions/insertPackagesOnTrack.js"></script>
+<script src="functions/createPackageForDisplay.js"></script>
+<script src="functions/createPallet.js"></script>
+<script src="functions/assignIDsToPackage.js"></script>
+<script src="functions/createPalletDisplay.js"></script>
+<script src="functions/createOddOrEvenNumsWithinRange.js"></script>
+<script src="functions/setBoxesOnTrack.js"></script>
+<script src="functions/setTimer.js"></script>
+<script src="functions/removeDisplayElement.js"></script>
+<script src="functions/findTotalBoxesOnTrack.js"></script>
+<script src="functions/handleStamina.js"></script>
+<script src="functions/updatePackageCountOnTrack.js"></script>
+<script src="functions/handleFatigue.js"></script>
+<script src="functions/stopTrackIfTooManyBoxes.js"></script>
+<script src="functions/setFatigueRecoveryInterval.js"></script>
+<script src="functions/addToStackWeight.js"></script>
+<script src="functions/runPallet.js"></script>
+<script src="functions/createRandomRGBValueObject.js"></script>
+<script src="functions//assignIntroImageAndDescription.js"></script>
+<script src="functions/createIntroImageDescriptionForSceneObject.js"></script>
+<script src="functions/assignIntroImageAndDescriptionForCharacter.js"></script>
+<script src="functions/insertMisloadElementIntoMisloadContainer.js"></script>
+<script src="functions/addMisloadToLog.js"></script>
+<script src="functions/createIntroImageDescriptionForCharacterObject.js"></script>
+<script src="functions/changeColorForEachPallet.js"></script>
+<script src="functions/changeColorPalletePackages.js"></script>
+<script src="functions/checkForSpecificStyleAndApplyToPackage.js"></script>
+<script src="functions/checkRouteNumberMapToColor.js"></script>
+<script src="functions/changeThemeDisplay.js"></script>
+<script src="functions/removeAllBackgroundFromLevelOne.js"></script>
+<script src="functions/removeAllBackgroundFromLevelThree.js"></script>
+<script src="functions/stripPalletsOfAllThemes.js"></script>
+<script src="functions/applyStyleToPalletDependingOnTheme.js"></script>
+<!-- End of function scripts -->
+
+<!-- Event listeners -->
+ <script src="functions/eventListeners/btnBossLevel.js"></script>
+ <script src="functions/eventListeners/btnCustomTheme.js"></script>
+<script src="functions/eventListeners/pauseGame.js"></script>
+<script src="functions/eventListeners/unpauseGame.js"></script>
+<script src="functions/eventListeners/btnEmode.js"></script>
+<script src="functions/eventListeners/btnMmode.js"></script>
+<script src="functions/eventListeners/btnHmode.js"></script>
+<script src="functions/eventListeners/btnUpgradeNumOfBoxesAllowedOnTrack.js"></script>
+<script src="functions/eventListeners/btnDrinkWater.js"></script>
+<script src="functions/eventListeners/btnUpgradeStamina.js"></script>
+<script src="functions/eventListeners/buttonUpgradeFatigue.js"></script>
+<script src="functions/eventListeners/buttonUpgradeWater.js"></script>
+<script src="functions/eventListeners/colorSchemeButtons/colorSchemeButtons.js"></script>
+<script src="functions/eventListeners/selectCharacter.js"></script>
+<script src="functions/eventListeners/buttonNextCharacterSelect.js"></script>
+<script src="functions/eventListeners/buttonNextScene.js"></script>
+<script src="functions/eventListeners/menuMisloads.js"></script>
+<script src="functions/eventListeners/menuStatistics.js"></script>
+<script src="functions/eventListeners/menuUpgradeStore.js"></script>
+<script src="functions/collectCurrentGameStatisticsAndDisplay.js"></script>
+<script src="functions/eventListeners/btnUpgradeChangeColor.js"></script>
+<script src="functions/eventListeners/btnGradientsTheme.js"></script>
+<script src="functions/eventListeners/allColorButtonsGeneralization.js"></script>
+<script src="functions/eventListeners/btnStage1.js"></script>
+<script src="functions/eventListeners/btnStage2.js"></script>
+<script src="functions/eventListeners/btnStage3.js"></script>
+<!-- End of event listeners -->
+
+
+<!-- Start of color storage  -->
+
+<script src="functions/createColorForSchema.js"></script>
+
+<!-- End of color storage -->
+
+<!-- End of scripts -->
+
+    <script src="script.js"></script>
+</body>
+</html>
